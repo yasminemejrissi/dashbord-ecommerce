@@ -28,7 +28,7 @@ st.pyplot(fig1)
 
 #Graphiques en barre pour les chiffres d'affaires par rapport aux profils
 fig2,ax2=plt.subplots()
-df.sort_values("chiffre_affaires",ascending=True).plot(kind="barh",x="profil",y="chiffre_affaires",,color="salmon",ax=ax2)
+df.sort_values("chiffre_affaires",ascending=True).plot(kind="barh",x="profil",y="chiffre_affaires",color="salmon",ax=ax2)
 st.pyplot(fig2)
 
 #Panier moyen par profil

@@ -23,7 +23,7 @@ st.dataframe(df.style.highlight_max(axis=0))
 #Camembert profils
 st.subheader("Répartition des profils")
 fig1,ax1=plt.subplots()
-df["nb_clients"].value_counts().plot(kind="pie",autopct="%1.1f%%",startangle=90,ax=ax1)
+df.set_index("profil")["nb_clients"].plot(kind="pie",autopct="%1.1f%%",startangle=90,ax=ax1)
 st.pyplot(fig1)
 
 #Graphiques en barre pour les chiffres d'affaires par rapport aux profils

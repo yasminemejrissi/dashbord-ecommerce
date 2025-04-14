@@ -28,13 +28,13 @@ st.pyplot(fig1)
 
 #Graphiques en barre pour les chiffres d'affaires par rapport aux profils
 fig2,ax2=plt.subplots()
-df.sort_values("chiffre_affaires",ascending=True).plot(kind="barh",color="salmon",ax=ax2)
+df.sort_values("chiffre_affaires",ascending=True).plot(kind="barh",x="profil",y="chiffre_affaires",,color="salmon",ax=ax2)
 st.pyplot(fig2)
 
 #Panier moyen par profil
 st.subheader("Panier moyen par profil")
 fig3,ax3=plt.subplots()
-df.sort_values("panier_moyen",ascending=True).plot(kind="barh",color="skyblue",ax=ax3)
+df.sort_values("panier_moyen",ascending=True).plot(kind="barh",x="profil",y="panier_moyen",color="skyblue",ax=ax3)
 st.pyplot(fig3)
 
 

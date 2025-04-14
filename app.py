@@ -1,4 +1,7 @@
 #streamlit rappel données fictives: 
+import streamlit as st
+import matplotlib.pyplot as plt
+import pandas as pd
 data = {
     "profil":["VIP", "Promo addict", "Régulier", "Occasionnel"],
     "nb_clients":[28, 19, 32, 21],

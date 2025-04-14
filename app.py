@@ -38,4 +38,4 @@ df.sort_values("panier_moyen",ascending=True).plot(kind="barh",x="profil",y="pan
 st.pyplot(fig3)
 
 
-st.markdown("**Projet e-commerce réalisé par Yasmine M.✨**")
+st.markdown("**Projet e-commerce réalisé en autonomie par Yasmine M.✨**")

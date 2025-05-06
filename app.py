@@ -3,6 +3,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 
+#Données fictives
 data = {
     "profil":["VIP", "Promo addict", "Régulier", "Occasionnel"],
     "nb_clients":[28, 19, 32, 21],
@@ -38,4 +39,4 @@ df.sort_values("panier_moyen",ascending=True).plot(kind="barh",x="profil",y="pan
 st.pyplot(fig3)
 
 
-st.markdown("**Projet e-commerce réalisé en autonomie par Yasmine M.✨**")
+st.markdown("**Projet e-commerce réalisé en autonomie par Mejrissi Yasmine**")
